@@ -1,5 +1,7 @@
 package com.olaspring.api.model;
 
+import java.util.Date;
+
 import com.olaspring.api.dto.CarDTO;
 
 import jakarta.persistence.Column;
@@ -33,7 +35,7 @@ public class Car {
   private String fabricante;
 
   @Column(nullable = false)
-  private String datafabricacao;
+  private Date datafabricacao;
 
   @Column(nullable = false)
   private int valor;
